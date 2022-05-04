@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+ul{
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.products{
+  border: 2px solid #00ff00;
+  padding: 8px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  margin: 0px 16px;
+}
+
+.container ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.container li{
+  width: calc((100% - 16px) / 2);
+}
+
+/* ---------------------------------------------------- */
+
+.box1{
+  border: 2px solid #000000;
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+.box2{
+  border: 2px solid #000000;
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+.box3{
+  border: 2px solid #000000;
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+.box4{
+  border: 2px solid #000000;
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+.box5{
+  border: 2px solid #000000;
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+.box6{
+  border: 2px solid #000000;
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+/* Medium Screen --------------------------------------- */
+
+@media(min-width: 600px){
+  body{
+    background-color: #ff00ff;
+  }
+
+  .container li{
+    width: calc((100% - 32px) / 3);
+  }
+
+}
+
+/* Large Screen ---------------------------------------- */
+
+@media(min-width: 800px){
+  body{
+    background-color: #0000ff;
+  }
+
+  .container ul{
+    width: 0px auto;
+    max-width: 800px;
+  }
+}
